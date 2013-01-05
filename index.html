@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>$.spatialFocus</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="jquery.spatialFocus.js"></script>
+</head>
+<body>
+	<h1>jQuery.spatialFocus</h1>
+
+	<div style="float:right;width:10em;">
+		<a href="http://microsoft.com/">Microsoft</a> &bull; <a href="http://apple.com/">Apple</a>
+	</div>
+	<p>jQuery.spatialFocus is a <a href="http://jquery.com/">jQuery</a> plugin which lets you use arrow keys (or any other 
+	arrow-like directional information) to navigate focusable elements. It does this by creating a spatial map of all focusable
+	elements on the page, then applying heuristics to calculate the closest elements above, below and to the right and left. This
+	map can be queried using the $(x).spatialMap() feature.</p>
+
+	<p>This page is managed by spatialFocus, so you can use your arrow keys to test the functionality. Note that no hints are needed,
+	spatialFocus is intelligently guessing how elements should be linked together in the map.</p>
+	<a href="http://google.com/">Google</a> <a href="http://yahoo.com/">Yahoo</a>
+
+	<p>This plugin was written by William Lahti as part of the <a href="http://slvr.tv/">slvr.tv</a> project.
+	<script>
+		$('body').spatialKeyboardFocus();
+	</script>
+</body>
+</html>
